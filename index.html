@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form action="" id="survey-form">
+
+        <div>
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" class="entry">
+        </div>
+
+        <div>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" class="entry">
+        </div>
+
+        <div>
+            <label for="number" id="number-label" >Age (optional)</label>
+            <input type="number" name="number" id="number" min="0" max="150" placeholder="Age" class="entry">
+        </div>
+
+        <div>
+            <p>Which option best describes your current role?</p>
+            <select name="select" id="dropdown" class="entry">
+                <option value disabled selected>Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Full Time Learner</option>
+                <option value="4">Prefer not to say</option>
+                <option value="5">Other</option>
+            </select>
+        </div>
+
+        <div class="radios">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label>
+                <input type="radio" name="radio-option">
+                Definitely
+            </label>
+            <label>
+                <input type="radio" name="radio-option">
+                Maybe
+            </label>
+            <label>
+                <input type="radio" name="radio-option">
+                Other
+            </label>
+        </div>
+
+        <div class="checkboxes">
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <label>
+                <input type="checkbox" name="checkbox-option" value="backend">
+                Backend
+            </label>
+            <label>
+                <input type="checkbox" name="checkbox-option" value="frontend">
+                Frontend
+            </label>
+            <label>
+                <input type="checkbox" name="checkbox-option" value="fullstack">
+                Fullstack
+            </label>
+        </div>
+
+        <div>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
